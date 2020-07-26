@@ -10,10 +10,14 @@
 
 |Istilah Vuex    |Pengertian                     |
 |----------------|-------------------------------|
-|state           |tempat *penyimpanan sumber* semua data di dalam vuex           |
+|state           |tempat *penyimpanan sumber semua data di dalam vuex           |
 |getters         |fungsinya sama seperti computed(), untuk melakukan penyaringan/manipulasi/pengurutan data pada state.            |
 |mutations       |untuk mengubah state, satu-satunya cara untuk mengubah state harus melalui mutations, tidak perduli dengan bisnis logic, bersifat sync & tidak dapat melakukan async|
 |actions         |digunakan sebagai *bisnis logic*, seperti melakukan *fetch data api*, dapat melakukan *async method*, setelah melakukan suatu method biasanya *dilanjutkan dengan melakukan mutations*        |
 |modules         |module memungkinkan kita untuk *memecah bagian dari aplikasi kita* agar dapat di-handle dengan mudah, sebab apabila digabungkan dalam satu file akan membentuk kumpulan code yang cukup besar dan menyulitkan kita untuk mencari bagian bagian yang akan dimodifikasi kemudian hari.|
 
 > **info:** masih banyak istilah lain yang belum disebutkan, tabel diatas akan diupdate.
+
+### Case yang biasa membutuhkan vuex
+1. Menyimpan data user yang melakukan login ke dalam aplikasi, sehingga datanya dapat ditampilkan di berbagai komponen aplikasi
+1. Menyimpan data user yang melakukan login ke dalam aplikasi, sehingga datanya dapat ditampilkan di berbagai komponen aplikasi

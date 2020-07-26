@@ -21,3 +21,5 @@
 ### Case yang biasa membutuhkan vuex
 1. Menyimpan data user yang melakukan login ke dalam aplikasi, sehingga datanya dapat ditampilkan di berbagai komponen aplikasi.
 2. Menyimpan status isLoading.
+3. Menyimpan Cart Produk
+4. Styling Web

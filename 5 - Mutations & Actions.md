@@ -89,10 +89,10 @@ Contoh Kode :
     },
   },
 ```
+> **ProTip:** Commit Mutations bisa langsung dilakukan di component, seperti contoh berikut 
+
 
 ```js
-  
-  // Commit Mutations bisa langsung dilakukan di component, seperti contoh berikut 
   testcommit() {
     this.$store.commit("SET_NAME", "AKU GANTENG BRO!");
   },

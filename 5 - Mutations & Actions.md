@@ -70,15 +70,23 @@ Contoh Kode :
   }  
   
   //Action pada module vuex
+
   actions: {
     async postAction({ commit }, post) {
-      const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/posts/"
+      const response = await axios.post(
+        'https://jsonplaceholder.typicode.com/posts/', post
       );
-      console.log(response.data);
-      commit("SET_USERS", response.data);
+      commit("SET_POST", response.data);
+      console.log("actions success");
     },
   },
+  mutations: {
+    SET_USER(state, payload) {
+      state.names = payload;
+      console.log("mutations success");
+    },
+  },
+  
 ```
 
 

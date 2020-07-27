@@ -24,6 +24,7 @@ Contoh Kode :
     increment(state) {
       state.count++;
     },
+    
     SET_USERS(state, users) {
       state.users = users;
     },

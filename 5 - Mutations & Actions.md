@@ -88,6 +88,9 @@ Contoh Kode :
       console.log("mutations success");
     },
   },
+```
+
+```js
   
   // Commit Mutations bisa langsung dilakukan di component, seperti contoh berikut 
   testcommit() {

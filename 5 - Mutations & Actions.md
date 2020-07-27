@@ -99,7 +99,6 @@ methods: {
   },
 }
   
-  // Mutationsnya
 mutations : {
   SET_NAME: (state, payload) => {
     state.names = payload;

@@ -71,7 +71,6 @@ Contoh Kode :
   }  
   
   //Action pada module vuex
-
   actions: {
     async postAction({ commit }, post) {
       const response = await axios.post(
@@ -81,6 +80,8 @@ Contoh Kode :
       console.log("actions success");
     },
   },
+  
+  //Mutations pada module vuex
   mutations: {
     SET_USER(state, payload) {
       state.names = payload;
@@ -88,6 +89,8 @@ Contoh Kode :
     },
   },
   
+  //state adalah state pada vuex
+  //payload adalah data yang dikirim dari action atau dari commit, contoh = commit("SET_USERS", response.data);  
 ```
 
 

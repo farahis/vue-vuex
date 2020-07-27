@@ -89,19 +89,23 @@ Contoh Kode :
     },
   },
 ```
-> **ProTip:** Commit Mutations bisa langsung dilakukan di component, seperti contoh berikut 
+> **ProTip:** Commit Mutations bisa langsung dilakukan di component melalui methods, seperti contoh berikut 
 
 
 ```js
+methods: {
   testcommit() {
     this.$store.commit("SET_NAME", "AKU GANTENG BRO!");
   },
+}
   
   // Mutationsnya
+mutations : {
   SET_NAME: (state, payload) => {
     state.names = payload;
     console.log("mutations success");
   },
+}
 ```  
 
 

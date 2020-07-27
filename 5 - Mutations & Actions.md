@@ -89,10 +89,17 @@ Contoh Kode :
     },
   },
   
-  //state adalah state pada vuex
-  //payload adalah data yang dikirim dari action atau dari commit, contoh = commit("SET_USERS", response.data);  
-```
-
+  // Commit Mutations bisa langsung dilakukan di component, seperti contoh berikut 
+  testcommit() {
+    this.$store.commit("SET_NAME", "AKU GANTENG BRO!");
+  },
+  
+  // Mutationsnya
+  SET_NAME: (state, payload) => {
+    state.names = payload;
+    console.log("mutations success");
+  },
+```  
 
 
 

@@ -53,7 +53,6 @@ export default user;
 
 <button @click="addcountuser()">Add Count User</button>
 <button @click="addcount()">Add Count</button>
-<button @click="user()">Increment</button>
 
 addcountuser() {
   this.$store.commit("user/increment");

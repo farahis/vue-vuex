@@ -23,3 +23,4 @@
 2. Menyimpan status isLoading.
 3. Menyimpan Cart Produk
 4. Styling Web
+5. Data pada Table

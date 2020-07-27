@@ -1,5 +1,5 @@
 Penjelasan: 
-1.  Jika tidak menggunakan  namespaced: true, maka file yang ada di dalam modules, dianggap seperti berada didalam index.
+1.  Jika tidak menggunakan  namespaced: true, maka file yang ada di dalam modules, dianggap seperti berada didalam parent nya (index.js).
 2.  Jika tanpa namespace, penamaan state yang ada di dalam module sama dengan yang ada di dalam index.js. 
     maka yang dibaca secara independet, namun dalam mutations dapat mempengaruhi semua state yang memiliki nama state yg sama
 3.  direkomendasikan menggunakan namespaced.

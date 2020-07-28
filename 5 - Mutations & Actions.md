@@ -1,6 +1,10 @@
 ### Mutations dan Actions
 
-Mutations bertugas untuk **mengkofirmasi setiap perubahan state** yang akan dilakukan, sedangkan *Actions* bertugas untuk **memberikan perintah terhadap apa yang akan dilakukan**. Misalnya saja, untuk melakukan perubahan data listposts, maka kita akan menyusun data yang akan di instruksikan ke Mutations agar melakukan perubahan pada state menggunakan **perintah commit**, meskipun kita dapat melakukan perubahan state secara langsung pada actions yang kita buat.
+Mutations bertugas untuk **mengkofirmasi setiap perubahan state** yang akan dilakukan, sedangkan *Actions* bertugas untuk **memberikan perintah terhadap apa yang akan dilakukan**. 
+
+Misalnya saja, untuk melakukan perubahan data listposts, maka kita akan menyusun data yang akan di instruksikan ke Mutations agar melakukan perubahan pada state menggunakan **perintah commit**, meskipun kita dapat melakukan perubahan state secara langsung pada actions yang kita buat, namun ini tidak direkomendasikan.
+
+> actions bisa bersifat asynchronous, sedangkan mutations hanya bersifat synchronous.
 
 Contoh Kode :
 
